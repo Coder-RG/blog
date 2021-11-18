@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "Techopia | Techcopia"
+title: "Techcopia"
 email: coder_g@pm.me
 description: >- # this means to ignore newlines until "baseurl:"
   Techcopia is a blog containing articles on reinforcement learning.

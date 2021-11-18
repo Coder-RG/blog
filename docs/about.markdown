@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Hey There!
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+If you are viewing my blog then you must be interested in reinforcement learning(Yay!). I hope you liked what you read. I once pursued an online course on machine learning and instantly developed an interest. If you too are willing to get your foot in, then I would suggest a [kaggle course][kaggle-course] on reinforcement learning. This is a great course in which you learn by doing.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Feel free to [contact me](mailto:coder_g@pm.me "Email")!
 
-
-[jekyll-organization]: https://github.com/jekyll
+[kaggle-course]: https://www.kaggle.com/learn/intro-to-game-ai-and-reinforcement-learning "Intro to Game AI and Reinforcement Learning"

@@ -2,11 +2,10 @@
 layout: post
 title: "Random agent plays Tic-Tac-Toe"
 author: Coder-RG
-email: coder_g@pm.me
 categories: reinforcement-learning
 ---
 
-Welcome! This is the first blog in the reinforcement learning path. In this path we will develop
+Welcome! This is the first article in the reinforcement learning path. In this path we will develop
 an agent that will be able to beat the best. Got too excited there, moving on!
 The agent will progress in stages. In each blog, it will become smarter in how it chooses its moves. Let's get started, shall we?
 
