@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Agent plays Tic-Tac-Toe using One-step lookahead!"
+title: "Bot plays Tic-Tac-Toe using One-step lookahead"
 author: Coder-RG
 categories: reinforcement-learning
 ---
@@ -321,5 +321,5 @@ Fascinating. There are more draws than either agent's wins.
 This brings an end to our one-step lookahead agent build. I hope this interested you to look out for the next article where we will implement the n-step lookahead agent.
 
 
-[article1]: {{site.baseurl}}/{% post_url 2021-11-16-random-agent-tictactoe %}
+[article1]: {{site.baseurl}}/{% post_url 2021-11-16-random-tictactoe %}
 [oslookahead]: https://www.kaggle.com/alexisbcook/one-step-lookahead
