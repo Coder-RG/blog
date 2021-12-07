@@ -20,7 +20,7 @@ from IPython.display import clear_output
 from time import sleep
 from util import *
 ```
-util is a python file containing some of the code from previous article. You can find all the code [here](https://github.com/Coder-RG/blog).
+util is a python file containing some of the code from previous article. You can find all the code [here](https://github.com/Coder-RG/blog-content/tictactoe).
 
 ## Let's create the battlefield
 
