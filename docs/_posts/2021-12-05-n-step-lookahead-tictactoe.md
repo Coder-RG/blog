@@ -67,6 +67,22 @@ def check_win_draw(ttt):
 
 ## N-Step Lookahead
 
+In one-step lookahead, `get_heuristic` did not check for opponent's three tiles
+in a sequence. Since it was never a possiblity for play to resume once either of
+the players placed three tiles in sequence. In n-step lookahead, however, we
+try to anticipate opponent's moves by playing any possible moves on a *test board*.
+Thus we will modify `get_heuristic` function to take this into account.
+
+### Scoring Scheme
+(for player)
+
+* 3-in-sequence: 100,000
+* 2-in-sequence: 1
+
+(for opponent)
+
+* 2-in-sequence: -100
+* 3-in-sequence: -1,000 
 ```python
 def get_heuristic(grid, player):
     """
@@ -93,6 +109,10 @@ def get_heuristic(grid, player):
     return score
 ```
 
+The next function is the core of our n-step lookahead algorithm. According to,
+our common friend, wikipedia:
+
+>A minimax algorithm is a recursive algorithm for choosing the next move in an n-player game, usually a two-player game. A value is associated with each position or state of the game. This value is computed by means of a position evaluation function and it indicates how good it would be for a player to reach that position. The player then makes the move that maximizes the minimum value of the position resulting from the opponent's possible following moves. If it is A's turn to move, A gives a value to each of their legal moves.
 
 ```python
 def minimax(grid, depth, player, maximising):
@@ -118,15 +138,35 @@ def minimax(grid, depth, player, maximising):
 
 ```python
 def score_move(grid, depth, move, player):
+    """
+    Helper function for `get_optimal_move` to score each valid_move.
+    """
     ttt = grid.copy()
     ttt[move] = player
     value = minimax(ttt, depth-1, player, False)
     return value
-```
 
-
-```python
 def get_optimal_move(grid, depth, player):
+    """
+    Uses minimax to find the best possible move.
+
+    Parameters:
+    ===========
+    grid: numpy.ndarray
+        --> 3x3 Tic-Tac-Toe grid
+    
+    depth: int
+        --> denotes the value of n in n-step lookahead. The max depth of tree
+        --> in minimax algorithm.
+    
+    player: int
+        --> 1(X) or 2(O) to represent the player.
+    
+    Returns:
+    ========
+    : tuple
+        --> Return (row, col) pair to represent the move in the grid
+    """
     scores = []
     valid_moves = get_valid_moves(grid)
     for valid_move in valid_moves:
@@ -151,17 +191,12 @@ for _ in range(ngames):
     grid = np.zeros((3,3), np.uint16)
     result['total_games'] += 1
     for iteration in range(9):
-        # Optimal Agent
         if iteration%2 == 0:
             move = get_optimal_move(grid,depth,agent1['piece'])
             grid[move] = agent1['piece']
-        # Optimal Agent
         else:
             move = get_optimal_move(grid,depth,agent2['piece'])
             grid[move] = agent2['piece']
-#         print(grid)
-#         sleep(2)
-#         clear_output()
         if check_win_draw(grid) != -1:
             game_result = check_win_draw(grid)
             if game_result == 1:
@@ -171,8 +206,6 @@ for _ in range(ngames):
             else:
                 result['draws'] += 1
             break
-
-print_result(result)
 ```
 ```
                           Stats                       
@@ -207,8 +240,6 @@ for _ in range(ngames):
             else:
                 result['draws'] += 1
             break
-
-print_result(result)
 ```
 ```
                           Stats                       
