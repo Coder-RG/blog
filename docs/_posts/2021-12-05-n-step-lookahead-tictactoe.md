@@ -2,6 +2,7 @@
 layout: post
 title: "Bot plays Tic-Tac-To using N-step lookahead"
 categories: reinforcement-learning
+author: Coder-RG
 ---
 
 Good to see you! In this article we will design a bot which can play Tic-Tac-Toe
