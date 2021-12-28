@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bot plays Tic-Tac-To using N-step lookahead"
+title: "Bot plays Tic-Tac-Toe using N-step lookahead"
 categories: reinforcement-learning
 author: Coder-RG
 ---
