@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Q-Learning with epsilon-decay
-author: Coder-RG
+author: Rishabh Goel
 categories: reinforcement-learning
 ---
 

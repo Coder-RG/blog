@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bot plays Tic-Tac-Toe using Random moves"
-author: Coder-RG
+author: Rishabh Goel
 categories: reinforcement-learning
 ---
 

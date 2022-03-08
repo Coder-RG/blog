@@ -35,7 +35,7 @@ permalink: /about/
 
 Hey There!
 
-Myself Rishabh Goel and I am the author of all the posts on this blog.
+Myself Rishabh Goel, I am the author of all posts on this blog.
 I find Reinforcement Learning very interesting and decided to document
 my journey through a blog. Learning-by-teaching is a famous concept and
 it might just help someone along the way. Hope you found this blog helpful.

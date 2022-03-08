@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bot plays Tic-Tac-Toe using One-step lookahead"
-author: Coder-RG
+author: Rishabh Goel
 categories: reinforcement-learning
 ---
 
