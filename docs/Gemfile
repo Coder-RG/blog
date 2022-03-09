@@ -19,8 +19,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap", "~> 1.4.0"
 end
 
-# Add sitemap for indexing on google
-# gem "jekyll-sitemap", "~> 1.4.0"
+gem "rouge", "~> 3.26.0"
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

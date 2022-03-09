@@ -34,6 +34,13 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - rouge
+
+markdown: kramdown
+
+kramdowm:
+  input: GFM
+  syntax_highlighter: rouge
 
 defaults:
   -
