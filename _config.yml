@@ -24,7 +24,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   A blog containing articles on reinforcement learning.
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://coder-rg.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: R1shabh_G0el
 github_username:  Coder-RG
 linkedin_username: r1shabhg0el
 
@@ -38,8 +37,7 @@ plugins:
 
 markdown: kramdown
 
-kramdowm:
-  input: GFM
+kramdown:
   syntax_highlighter: rouge
 
 defaults:
@@ -48,6 +46,9 @@ defaults:
       path: ''
     values:
       author: Rishabh Goel
+
+exclude:
+  - docs/
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

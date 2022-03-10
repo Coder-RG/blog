@@ -4,6 +4,10 @@ title: Modelling in Mujoco's XML format
 categories: reinforcement-learning
 ---
 
+{% capture _ %}
+{% increment fig_counter %}
+{% endcapture %}
+
 Oh hello!👋
 
 Welcome to this article on modelling in [MuJoCo](https://mujoco.readthedocs.io/).
@@ -63,17 +67,13 @@ as the parent to all others bodies.
 {{site.baseurl}}/assets/images/mujoco/floor.png
 {% endcapture %}
 
-<!-- {% capture mycaption %}
-Fig {{fig_counter}}: Adding floor to our model
-{% endcapture %} -->
-
 {% capture mycaption %}
-Fig {% increment fig_counter %}: Adding floor our model
+Fig {% increment fig_counter %}: Adding floor to our model
 {% endcapture %}
 
 {% include image.html url=image_path caption=mycaption %}
 
-Geoms are used for collision calculation. The shape is chosen using the `type` parameter.
+**Geoms** are used for collision calculation. The shape is chosen using the `type` parameter.
 `size` gives the dimensions of the geom. You only specify the half values in size.
 The values are of the form `x y z`. It spans both positive and negative axis equally. 
 The values `5 2 .1` means 5 in +x and 5 in -x direction. Similar for other axes as well.
@@ -88,8 +88,11 @@ Fig {% increment fig_counter %}: Assigning dimensions in mujoco
 
 {% include image.html url=image_path caption=mycaption %}
 
-| Name | Description | Value |
-|:----:|:-----------:|:-----:|
-| body | Objects that have inertia and mass but no geometry | None |
-| geom | Used to give shape to bodies | predefined object shapes to choose from |
-| rgba | Specify the colour of objects | integer; 0-1 |
+Next, we will design the quadrotor. Let's start by defining the body.
+
+
+| Name | Description |
+|:----:|:-----------:|
+| body | Objects that have inertia and mass but no geometry |
+| geom | Used to give shape to bodies |
+| rgba | Specify the colour of objects |
