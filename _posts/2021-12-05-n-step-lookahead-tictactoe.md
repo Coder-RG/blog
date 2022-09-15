@@ -247,5 +247,5 @@ for _ in range(ngames):
     --------------------------------------------------
     Total Games:100   Agent1:100   Agent2:0     Draws:0    
 ```
-[article2]: {{site.baseurl}}/{% post_url 2021-11-18-one-step-lookahead-tictactoe %}
+[article2]: {{site.baseurl}}{% post_url 2021-11-18-one-step-lookahead-tictactoe %}
 [nstepwiki]: https://en.wikipedia.org/wiki/Minimax

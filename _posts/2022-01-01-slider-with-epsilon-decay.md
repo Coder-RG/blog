@@ -83,4 +83,4 @@ This reward system will penalise the agent for long episode lengths.
 A final observation is that the episode length are comparatively small in second
 and third reward system. Only in the first example does the episode length grow over time.
 
-[slider]: {{site.baseurl}}/{% post_url 2021-12-18-slider %}
+[slider]: {{site.baseurl}}{% post_url 2021-12-18-slider %}
